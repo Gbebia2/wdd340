@@ -1,6 +1,143 @@
-/******* Change Box Model ***************/
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
+body {
+  font-family: 'kanit', sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  margin: 0;
+  padding: 15px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.siteName a {
+  font-size: 28px;
+  font-weight: bold;
+  color: grey;
+  text-decoration: none;
+}
+
+#tools a {
+  font-size: 16px;
+  font-weight: bold;
+  color: grey;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  padding: 15px;
+  background-color: grey;
+}
+
+nav ul li {
+  border-bottom: none;
+  margin-right: 1rem;
+}
+
+nav ul li a {
+  color: #ffffff;
+  padding: 0;
+  text-decoration: none;
+}
+
+.delorean img {
+  max-width: 100%;
+  height: auto;
+}
+
+.reviews ul li{
+  padding: 20px;
+}
+
+.upgrades {
+  text-align: center;
+  padding: 20px;
+}
+
+.upgrade-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  justify-content: center;
+}
+
+.upgrade {
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.upgrade img {
+  width: 80px;
+  height: auto;
+}
+
+.upgrade a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+}
+
+.delorean {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.delorean-details {
+  position: absolute; 
+  top: 40%; 
+  left: 20%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.own-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1rem; 
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.own-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+@media (min-width: 500px){
+  body {
+    background-image: url('../images/site/checkerboard.jpg');
+    margin: 0;
+    padding: 15px;
+  }
+
+  #wrapper {
+    background: white;
+    width: 90%; 
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 3px solid #00aced;
+  }
+
+  #grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
 }
